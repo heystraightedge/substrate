@@ -325,7 +325,7 @@ impl<FullIdentification: Clone> Offence<FullIdentification> for BabeEquivocation
 		let x = Perbill::from_rational_approximation(3 * offenders_count, validator_set_count);
 		// _ ^ 2
 		// x.square()
-		0
+		Perbill::zero()
 	}
 }
 
