@@ -158,6 +158,7 @@ impl<T: Clone> offence::Offence<T> for Offence<T> {
 		offenders_count: u32,
 		validator_set_count: u32,
 	) -> Perbill {
-		Perbill::from_percent(5 + offenders_count * 100 / validator_set_count)
+		// Perbill::from_percent(5 + offenders_count * 100 / validator_set_count)
+		0
 	}
 }
