@@ -574,7 +574,7 @@ impl<Offender: Clone> Offence<Offender> for UnresponsivenessOffence<Offender> {
 		// a manual scaling.
 		// TODO: #3189 should fix this.
 		let p = (x.into_parts() as u64 * 50_000_000u64) / 1_000_000_000u64;
-		Perbill::from_parts(p as u32)
+		Perbill::from_parts(0 as u32)
 	}
 }
 
